@@ -31,6 +31,16 @@ window.addEventListener('scroll', function () {
 })
 
 window.addEventListener('scroll', function () {
+	let nav = document.querySelector('.navbar');
+	let windowPosition = window.scrollY > 100;
+	if (windowPosition == true) {
+		nav.style.opacity = 0.8;
+	} else{
+		nav.style.opacity = 1;
+	}
+})
+
+window.addEventListener('scroll', function () {
 	let botonSubir = document.querySelector('.subir');
 	let windowPosition = window.scrollY > 895;
 	botonSubir.classList.toggle('subirB', windowPosition);

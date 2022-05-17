@@ -14,22 +14,21 @@
 <body>
     <header>
         <nav id="navbar" class="navbar">
-            <img id="logo" src="./img/logo.png" alt="">
+            <a href="#colocacion-inicio"><img id="logo" src="./img/logo.png" alt=""></a>
             <ul class="nav-item">
-                <li class="nav-items"><a href="#">Inicio</a></li>
-                <li class="nav-items"><a href="#precios">Hosting</a></li>
-                <li class="nav-items"><a href="#">Servidores</a></li>
-                <li class="nav-items"><a href="#">Servicios</a></li>
-                <li class="nav-items"><a href="#">Nosotros</a></li>
-                <li class="nav-items"><a href="#">Soporte</a></li>
-                <li class="nav-items"><a href="#">Afiliación</a></li>
-                <button class="nav-button">Clientes</button>
+                <li class="nav-items"><a href="#colocacion-inicio">Inicio</a></li>
+                <li class="nav-items"><a href="#colocacion-hosting">Hosting</a></li>
+                <li class="nav-items"><a href="#colocacion-nube">Nube</a></li>
+                <li class="nav-items"><a href="#colocacion-servicios">Servicios</a></li>
+                <li class="nav-items"><a href="#colocacion-mapa">Centros</a></li>
+                <button class="nav-button boton">Clientes</button>
             </ul>
         </nav>
-        <button><a class="subir" href="#navbar">^</a></button>
+        <button><a class="subir" href="#colocacion-inicio">^</a></button>
     </header>
     <main>
         <section class="presentacion">
+            <span id="colocacion-inicio"></span>
             <div class="presentacion-centrada">
                 <div class="presentacion-descripcion">
                     <h1 class="titulo">Servidores dedicados</h1>
@@ -37,8 +36,8 @@
                     <p class="subsubtitulo">Potentes servidores con recursos de gama alta que garantizan la exclusividad
                         de los recursos, desde <span class="precio-subsubtitulo">$35</span> al mes.</p>
                     <div class="presentacion-btns">
-                        <button class="botones-presentacion-left">Obtener precios</button> <button
-                            class="botones-presentacion-right">Leer más</button>
+                        <button class="botones-presentacion-left boton">Obtener precios</button> <button
+                            class="botones-presentacion-right boton">Leer más</button>
                     </div>
                 </div>
                 <div class="presentacion-img">
@@ -47,12 +46,12 @@
             </div>
         </section>
         <section name="precios" id="precios" class="precios">
+            <span id="colocacion-hosting">a</span>
             <div class="fondo-precios">
                 <div class="centrar-tarjetas">
                     <!-- TARJETA 1 -->
-                    <div class="tarjeta">
+                    <div class="tarjeta tarjetaArriba">
                         <div class="precio-tarjeta">
-                            <img id="nube1" src="./img/nube1.jpg" alt="">
                             <div class="descripcion-precio-tarjeta">
                                 <h3 class="titulo-precio">
                                     Hosting compartido
@@ -60,7 +59,7 @@
                                 <p class="desde-precio">Desde</p>
                                 <span class="total-precio"><sup class="dollar">$</sup><span
                                         class="number">27.95</span><span class="mes">/mensual</span></span>
-                                <button class="boton-precio"><a href="#" class="link-precio">Todos los
+                                <button class="boton-precio boton"><a href="#" class="link-precio">Todos los
                                         planes</a></button>
                             </div>
                         </div>
@@ -160,7 +159,6 @@
                     <!-- TARJETA 2 -->
                     <div class="tarjeta2">
                         <div class="precio-tarjeta">
-                            <img id="nube2" src="./img/nube2.jpg" alt="">
                             <div class="descripcion-precio-tarjeta">
                                 <h3 class="titulo-precio2">
                                     Servidor Dedicado
@@ -168,7 +166,7 @@
                                 <p class="desde-precio">Desde</p>
                                 <span class="total-precio"><sup class="dollar">$</sup><span
                                         class="number">59</span><span class="mes">/mensual</span></span>
-                                <button class="boton-precio"><a href="#" class="link-precio">Todos los
+                                <button class="boton-precio boton"><a href="#" class="link-precio">Todos los
                                         planes</a></button>
                             </div>
                         </div>
@@ -223,7 +221,6 @@
                     <!-- TARJETA 3 -->
                     <div class="tarjeta">
                         <div class="precio-tarjeta">
-                            <img id="nube2" src="./img/nube3.jpg" alt="">
                             <div class="descripcion-precio-tarjeta">
                                 <h3 class="titulo-precio3">
                                     Servidor Gaming
@@ -231,7 +228,7 @@
                                 <p class="desde-precio">Desde</p>
                                 <span class="total-precio"><sup class="dollar">$</sup><span
                                         class="number">25</span><span class="mes">/mensual</span></span>
-                                <button class="boton-precio"><a href="#" class="link-precio">Todos los
+                                <button class="boton-precio boton"><a href="#" class="link-precio">Todos los
                                         planes</a></button>
                             </div>
                         </div>
@@ -332,6 +329,7 @@
             </div>
         </section>
         <section class="nube">
+            <span id="colocacion-nube">a</span>
             <div class="nube-centrar">
                 <span>Equilibrio De Carga En La Nube</span>
                 <p>Toda la carga de nuestros servidores se mantiene en la nube y por lo mismo nunca caen si no es por un
@@ -356,6 +354,7 @@
             </div>
         </section>
         <section class="porque patron">
+            <span id="colocacion-servicios">a</span>
             <div class="centrar-porque">
                 <span>¿Por qué elegirnos?</span>
                 <p>Somos una nueva marca y queremos darle el mejor servició a nuestros clientes por eso mismo damos todo
@@ -365,7 +364,7 @@
                         <div class="centrar-tarjeta-porque">
                             <span>Soporte 24/7/365</span>
                             <p>Tenemos soporte técnico 24 horas trabajando para nuestros clientes.</p>
-                            <button class="leermasporque1">Leer más</button>
+                            <button class="leermasporque1 boton">Leer más</button>
                         </div>
                     </div>
                     <div class="tarjeta-porque">
@@ -373,7 +372,7 @@
                             <span>Gratis WHM & cPanel</span>
                             <p>Los reseller WHM y Cpanel totalmente gratuito a la contratación del pack hosting reseller
                                 o revendedor.</p>
-                            <button class="leermasporque2">Leer más</button>
+                            <button class="leermasporque2 boton">Leer más</button>
                         </div>
                     </div>
                     <div class="tarjeta-porque">
@@ -381,24 +380,33 @@
                             <span>Rendimiento Optimizado</span>
                             <p>Todos nuestros servicios están totalmente optimizados para que todo funcione mucho más
                                 rápido.</p>
-                            <button class="leermasporque3">Leer más</button>
+                            <button class="leermasporque3 boton">Leer más</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <section class="seccion-mapa">
+            <span id="colocacion-mapa">a</span>
             <div class="centrar-mapa">
                 <span>Nuestros centros de datos están ubicados en varias regiones:</span>
                 <div class="mapa map">
                     <div id="miami">
                         <div class="tarjeta-miami">
+                            <span>Miami</span>
                             <div class="pico-tarjeta-miami"></div>
                         </div>
                     </div>
                     <div id="barcelona">
                         <div class="tarjeta-barcelona">
+                            <span>Barcelona</span>
                             <div class="pico-tarjeta-barcelona"></div>
+                        </div>
+                    </div>
+                    <div id="berlin">
+                        <div class="tarjeta-berlin">
+                            <span>Berlín</span>
+                            <div class="pico-tarjeta-berlin"></div>
                         </div>
                     </div>
                 </div>
@@ -406,7 +414,9 @@
         </section>
     </main>
     <footer>
-
+        <section class="footer">
+            <span>© Pagina web creada por José Luis Pino Redondo</span>
+        </section>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="./main.js"></script>

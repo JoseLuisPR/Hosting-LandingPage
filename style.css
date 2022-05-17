@@ -7,7 +7,9 @@
     font-family: 'Lato', sans-serif;
 }
 
-
+html {
+    scroll-behavior: smooth;
+}
 
 .navbar {
     position: fixed;
@@ -31,11 +33,12 @@
     justify-content: center;
     align-items: center;
     padding: 1%;
-    background: linear-gradient(90deg, rgba(249,148,0,1) 0%, rgba(43,216,197,1) 50%, rgba(249,148,0,1) 100%);
+    background: linear-gradient(90deg, rgba(249, 148, 0, 1) 0%, rgba(43, 216, 197, 1) 50%, rgba(249, 148, 0, 1) 100%);
     z-index: 20;
+    opacity: 0.8;
 }
 
-  
+
 
 
 .nav-item {
@@ -65,6 +68,7 @@ a {
     background-color: #fdd700;
     cursor: pointer;
 }
+
 .nav-button:hover {
     border: none;
     border-radius: 12px;
@@ -79,7 +83,7 @@ a {
     max-width: 60px;
 }
 
-.subir{
+.subir {
     bottom: 10px;
     right: 10px;
     width: 50px;
@@ -92,13 +96,13 @@ a {
     opacity: 0;
 }
 
-.subirB{
+.subirB {
     bottom: 10px;
     right: 10px;
     width: 50px;
     position: fixed;
     height: 50px;
-    background-color: rgba(249,148,0,1);
+    background-color: rgba(249, 148, 0, 1);
     z-index: 20;
     font-size: 50px;
     border-radius: 10px;
@@ -111,7 +115,7 @@ a {
 .presentacion {
     background: rgb(23, 35, 43);
     background: linear-gradient(90deg, rgba(23, 35, 43, 1) 0%, rgba(40, 66, 79, 1) 35%, rgba(57, 95, 113, 1) 100%);
-    height: 100vh;
+    height: 970px;
     display: flex;
     justify-content: center;
 }
@@ -121,10 +125,10 @@ a {
 /* Div para centrar presentacion */
 .presentacion-centrada {
     position: absolute;
-    width: 53vw;
+    width: 63%;
     min-width: 450px;
     height: 832px;
-    margin: 10vh auto;
+    margin: 97px auto;
     align-items: center;
     display: flex;
 }
@@ -132,58 +136,63 @@ a {
 
 .presentacion-descripcion {
     position: relative;
-    margin:auto 0;
+    margin: auto 0;
     height: 350px;
     width: 49%;
     z-index: 1;
+    min-width: 370px;
 }
+
 .presentacion-img {
     position: absolute;
     display: flex;
-    margin:auto 0;
+    margin: auto 0;
     height: 600px;
     width: 100%;
-}
-#presentacion-img{
-    height: 650px;
-    margin:-50px 450px;
+    align-items: center;
 }
 
-.titulo{
-    color:white;
+#presentacion-img {
+    height: 650px;
+    margin: 0 610px;
+}
+
+.titulo {
+    color: white;
     font-size: 52px;
 }
-.subtitulo{
-    color:white;
+
+.subtitulo {
+    color: white;
     font-size: 32px;
 }
 
-.typed{
-    color:white;
+.typed {
+    color: white;
     font-size: 32px;
 }
 
-.subsubtitulo{
+.subsubtitulo {
     margin-top: 50px;
-    color:white;
-    line-height:30px;
+    color: white;
+    line-height: 30px;
     font-size: 19px;
 }
 
-.precio-subsubtitulo{
-    color:orange;
+.precio-subsubtitulo {
+    color: orange;
     font-weight: bold;
 }
 
-.presentacion-btns{
+.presentacion-btns {
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     height: 140px;
+    align-items: center;
 }
 
-.botones-presentacion-left{
-    margin: 60px 30px;
+.botones-presentacion-left {
     height: 50px;
     width: 160px;
     border: none;
@@ -192,8 +201,11 @@ a {
     font-weight: bold;
     font-size: 15px;
     cursor: pointer;
+    min-width: 150px;
+    min-height: 50px;
 }
-.botones-presentacion-right{
+
+.botones-presentacion-right {
     margin: 60px 30px;
     height: 50px;
     width: 120px;
@@ -203,50 +215,55 @@ a {
     font-weight: bold;
     font-size: 15px;
     cursor: pointer;
+    min-width: 100px;
+    min-height: 50px;
 }
 
 
 /* TARJETAS */
 
-.fondo-precios{
+.fondo-precios {
     background-color: #f6f6f6;
     position: relative;
     width: 100%;
-    height: 120vh;
+    height: 1150px;
     display: flex;
     justify-content: center;
 }
 
-.centrar-tarjetas{
+.centrar-tarjetas {
     width: 65%;
     justify-content: space-around;
     display: flex;
     position: absolute;
     height: 120vh;
     top: -30px;
+
 }
 
-.tarjeta{
+.tarjeta {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     position: relative;
     height: 800px;
     width: 30%;
+    min-width: 290px;
 }
 
-.tarjeta2{
+.tarjeta2 {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     position: relative;
     height: 440px;
     width: 30%;
+    min-width: 290px;
 }
 
 /* PRECIOS */
 
-.precio-tarjeta{
+.precio-tarjeta {
     position: absolute;
     background-color: white;
     width: 100%;
@@ -256,77 +273,64 @@ a {
     z-index: 5;
 }
 
-#nube1{
-    position: relative;
-    width: 90px;
-    top: 20px;
-    left: 30px;
-}
-#nube2{
-    position: relative;
-    width: 70px;
-    top: 33px;
-    left: 30px;
-}
-.descripcion-precio-tarjeta{
+.descripcion-precio-tarjeta {
     position: absolute;
     display: flex;
     flex-direction: column;
-    top: 60px;
-    height: 185px;
+    top: 20px;
+    height: 230px;
     width: 100%;
     justify-content: center;
 }
-.titulo-precio{
+
+.titulo-precio {
     margin: 0 auto;
-    color:#f99400;
+    color: #f99400;
     font-size: 25px;
     position: relative;
-    top: 20px;
-}
-.titulo-precio2{
-    margin: 0 auto;
-    color:#f99400;
-    font-size: 25px;
-    position: relative;
-    top: 20px;
-    left: -6px;
-}
-.titulo-precio3{
-    margin: 0 auto;
-    color:#f99400;
-    font-size: 25px;
-    position: relative;
-    top: 20px;
-    left: -16px;
-}
-.desde-precio{
-    color: grey;
-    margin: 7px 73px;
-    font-style: italic;
-    position: relative;
-    top: 12px;
-    left: 4px;
 }
 
-.total-precio{
-    margin: 0 73px;
+.titulo-precio2 {
+    margin: 0 auto;
+    color: #f99400;
+    font-size: 25px;
+    position: relative;
+}
+
+.titulo-precio3 {
+    margin: 0 auto;
+    color: #f99400;
+    font-size: 25px;
+    position: relative;
+}
+
+.desde-precio {
+    color: grey;
+    margin: 0 auto;
+    font-style: italic;
+    position: relative;
+}
+
+.total-precio {
+    margin: 0 auto;
     font-size: 32px;
     position: relative;
-    top: 6px;
-    left: 4px;
 }
-.dollar{
+
+.dollar {
     font-size: 17px;
 }
-.mes{
+
+.mes {
     font-size: 25px;
     color: grey;
 }
-.link-precio{
-    color:black;
+
+.link-precio {
+    color: black;
 }
-.boton-precio{
+
+.boton-precio {
     border: none;
     background-color: #fdd700;
     height: 50px;
@@ -342,7 +346,7 @@ a {
 
 /* CARACTERISTICAS */
 
-.caracteristicas-tarjeta{
+.caracteristicas-tarjeta {
     background-color: orange;
     position: relative;
     top: 290px;
@@ -355,7 +359,7 @@ a {
     flex-direction: column;
 }
 
-.caracteristicas-tarjeta2{
+.caracteristicas-tarjeta2 {
     background-color: #2BD8C5;
     position: relative;
     top: 290px;
@@ -368,32 +372,32 @@ a {
     flex-direction: column;
 }
 
-.caracteristicas{
+.caracteristicas {
     margin: 0 auto;
     position: relative;
     width: 300px;
 }
 
-.caracteristicas-texto>p{
+.caracteristicas-texto>p {
     color: white;
     margin: 0px auto;
     font-size: 20px;
 }
 
-.caracteristicas-ordenar{
+.caracteristicas-ordenar {
     margin-top: 20px;
     display: flex;
     align-items: center;
 }
 
-i{
+i {
     color: white;
     position: relative;
     font-size: 45px;
     padding-right: 20px;
 }
 
-.fa-usb{
+.fa-usb {
     transform: rotate(-90deg);
     position: relative;
     left: -7px;
@@ -401,30 +405,35 @@ i{
     font-size: 35px;
 }
 
-.fa-display{
+.fa-display {
     font-size: 40px;
 }
 
-.fa-lock{
+.fa-lock {
     font-size: 52px;
 }
 
-.fa-floppy-disk{
+.fa-floppy-disk {
     font-size: 52px;
 }
-.fa-calendar{
+
+.fa-calendar {
     font-size: 53px;
 }
-.fa-memory{
+
+.fa-memory {
     font-size: 40px;
 }
-.fa-computer{
+
+.fa-computer {
     font-size: 40px;
 }
-.fa-wifi{
+
+.fa-wifi {
     font-size: 35px;
 }
-.fa-code{
+
+.fa-code {
     font-size: 36px;
 }
 
@@ -432,51 +441,52 @@ i{
 
 /* NUBE */
 
-.nube{
+.nube {
     background-color: white;
     width: 100%;
-    height:520px;
+    height: 520px;
     display: flex;
     flex-direction: column;
 }
 
-.nube-centrar{
+.nube-centrar {
     margin: 100px auto;
     width: 63%;
     display: flex;
     flex-direction: column;
 }
 
-.nube-centrar>span{
+.nube-centrar>span {
     font-size: 32px;
     margin-bottom: 12px;
 }
 
-.nube-centrar>p{
-    line-height:34px;
+.nube-centrar>p {
+    line-height: 34px;
     font-size: 19px;
     margin-bottom: 24px;
-    color: #808080;;
+    color: #808080;
+    ;
 }
 
-.descripcion{
+.descripcion {
     display: flex;
     justify-content: space-between;
 }
 
-.descripcion-detalles{
+.descripcion-detalles {
     width: 32.5%;
     display: flex;
     flex-direction: column;
 }
 
-.descripcion-detalles>span{
+.descripcion-detalles>span {
     font-size: 22px;
     color: #2BD8C5;
     margin: 15px 0;
 }
 
-.descripcion-detalles>p{
+.descripcion-detalles>p {
     font-size: 19px;
     line-height: 30px;
     color: #808080;
@@ -485,90 +495,94 @@ i{
 
 /* POR QUE */
 
-.porque{
+.porque {
     background-color: #fdd700;
     width: 100%;
     height: 700px;
 }
 
-.patron{
+.patron {
     background-image: url(./img/patron.svg);
     background-repeat: repeat;
     display: flex;
     flex-direction: column;
 }
 
-.centrar-porque{
+.centrar-porque {
     margin: 100px auto;
     width: 63%;
     display: flex;
     flex-direction: column;
 }
-.centrar-porque>span{
+
+.centrar-porque>span {
     font-size: 32px;
     margin-bottom: 12px;
 }
 
-.centrar-porque>p{
+.centrar-porque>p {
     font-size: 19px;
     color: #808080;
     margin-bottom: 36px;
 }
 
-.tarjetas-porque{
+.tarjetas-porque {
     display: flex;
     justify-content: space-between;
     height: 350px;
 }
 
-.tarjeta-porque{
+.tarjeta-porque {
     background-color: white;
-    width: 27%;
+    width: 320px;
+    min-width: 320px;
     display: flex;
     flex-direction: column;
     height: 100%;
     justify-content: center;
     border-radius: 20px;
 }
-.centrar-tarjeta-porque{
+
+.centrar-tarjeta-porque {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     width: 75%;
     height: 100%;
 }
-.centrar-tarjeta-porque>span{
+
+.centrar-tarjeta-porque>span {
     font-size: 22px;
     margin: 40px 0 30px;
 }
 
-.centrar-tarjeta-porque>p{
+.centrar-tarjeta-porque>p {
     font-size: 19px;
     color: #808080;
     margin-bottom: 0px;
 }
 
-.centrar-tarjeta-porque>button{
+.centrar-tarjeta-porque>button {
     position: relative;
     height: 50px;
     width: 100px;
     border: none;
     border-radius: 30px;
     background-color: #fdd700;
-
     font-weight: bold;
     font-size: 15px;
     cursor: pointer;
 }
 
-.leermasporque1{
+.leermasporque1 {
     bottom: -70px;
 }
 
-.leermasporque2{
+.leermasporque2 {
     bottom: -46px;
 }
-.leermasporque3{
+
+.leermasporque3 {
     bottom: -47px;
 }
 
@@ -576,110 +590,413 @@ i{
 
 /* MAPA */
 
-.seccion-mapa{
+.seccion-mapa {
     display: flex;
     flex-direction: column;
     height: 1000px;
     background: rgb(40, 67, 80);
 }
-.centrar-mapa{
+
+.centrar-mapa {
     width: 63%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
 }
 
-.centrar-mapa>span{
+.centrar-mapa>span {
     color: white;
     font-size: 32px;
     margin: 50px 0 0;
 }
-.mapa{
+
+.mapa {
     width: 1200px;
     height: 800px;
     margin: 50px auto 0;
-    border: 2px solid green;
 }
 
-.map{
+.map {
     background-image: url(./img/map.svg);
     background-repeat: no-repeat;
 }
 
-#miami{
+
+
+#miami {
     width: 15px;
     height: 15px;
-    background-color: rgba(249,148,0,1);
+    background-color: rgba(249, 148, 0, 1);
     position: absolute;
     border-radius: 50px;
-    margin: 360px 273px;
+    margin: 362px 275px;
     cursor: pointer;
     border: 2px solid white;
 }
-.tarjeta-miami{
+
+.tarjeta-miami {
     display: none;
-    width: 250px;
-    height: 200px;
-    background-color: white;
+    width: 120px;
+    height: 50px;
+    background-color: #142127;
+    opacity: 0.8;
     position: absolute;
     border-radius: 20px;
-    margin: -220px -110px;
+    margin: -52px -55px;
+    justify-content: center;
+    transform: scale(0.6);
 }
 
-.pico-tarjeta-miami{
-    display: none;
+.tarjeta-miami>span {
+    position: absolute;
+    margin: 13px auto 0;
+    font-size: 20px;
+    color: white;
+    z-index: 4;
+    text-align: center;
+}
+
+.pico-tarjeta-miami {
+    display: flex;
     width: 35px;
     height: 35px;
-    background-color: white;
+    background-color: #142127;
     position: absolute;
     transform: rotate(45deg);
-    margin: 174px 100px;
+    margin: 20px 0;
 }
 
-#miami:hover .tarjeta-miami{
+#miami:hover {
+    transform: scale(1.6);
+}
+
+#miami:hover .tarjeta-miami {
+    display: flex;
+}
+
+#miami:hover .pico-tarjeta-miami {
     display: block;
 }
 
-#miami:hover .pico-tarjeta-miami{
-    display: block;
+.boton:hover {
+    transform: scale(1.1);
 }
 
 
-
-#barcelona{
+#barcelona {
     width: 15px;
     height: 15px;
-    background-color: rgba(249,148,0,1);
+    background-color: rgba(249, 148, 0, 1);
     position: absolute;
     border-radius: 50px;
-    margin: 360px 273px;
+    margin: 302px 560px;
     cursor: pointer;
     border: 2px solid white;
 }
-.tarjeta-barcelona{
+
+.tarjeta-barcelona {
     display: none;
-    width: 250px;
-    height: 200px;
-    background-color: white;
+    width: 120px;
+    height: 50px;
+    background-color: #142127;
+    opacity: 0.8;
     position: absolute;
     border-radius: 20px;
-    margin: -220px -110px;
+    margin: -52px -55px;
+    justify-content: center;
+    transform: scale(0.6);
 }
 
-.pico-tarjeta-barcelona{
-    display: none;
+.tarjeta-barcelona>span {
+    position: absolute;
+    margin: 13px auto 0;
+    font-size: 20px;
+    color: white;
+    z-index: 4;
+    text-align: center;
+}
+
+.pico-tarjeta-barcelona {
+    display: flex;
     width: 35px;
     height: 35px;
-    background-color: white;
+    background-color: #142127;
     position: absolute;
     transform: rotate(45deg);
-    margin: 174px 100px;
+    margin: 20px 0;
 }
 
-/* #barcelona:hover .tarjeta-barcelona{
+#barcelona:hover {
+    transform: scale(1.6);
+}
+
+#barcelona:hover .tarjeta-barcelona {
+    display: flex;
+}
+
+#barcelona:hover .pico-tarjeta-barcelona {
     display: block;
 }
 
-#barcelona:hover .pico-tarjeta-barcelona{
+
+
+
+#berlin {
+    width: 15px;
+    height: 15px;
+    background-color: rgba(249, 148, 0, 1);
+    position: absolute;
+    border-radius: 50px;
+    margin: 205px 712px;
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+.tarjeta-berlin {
+    display: none;
+    width: 120px;
+    height: 50px;
+    background-color: #142127;
+    opacity: 0.8;
+    position: absolute;
+    border-radius: 20px;
+    margin: -52px -55px;
+    justify-content: center;
+    transform: scale(0.6);
+}
+
+.tarjeta-berlin>span {
+    position: absolute;
+    margin: 13px auto 0;
+    font-size: 20px;
+    color: white;
+    z-index: 4;
+    text-align: center;
+}
+
+.pico-tarjeta-berlin {
+    display: flex;
+    width: 35px;
+    height: 35px;
+    background-color: #142127;
+    position: absolute;
+    transform: rotate(45deg);
+    margin: 20px 0;
+}
+
+#berlin:hover {
+    transform: scale(1.6);
+}
+
+#berlin:hover .tarjeta-berlin {
+    display: flex;
+}
+
+#berlin:hover .pico-tarjeta-berlin {
     display: block;
-} */
+}
+
+
+
+/* FOOTER */
+
+.footer {
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+.footer>span {
+    color: #808080;
+    margin: 0 20px;
+}
+
+
+/* COLOCACION NAV */
+
+#colocacion-inicio {
+    position: absolute;
+    top: 0;
+    z-index: -5;
+    color: white;
+}
+
+#colocacion-hosting {
+    position: absolute;
+    top: 800px;
+    z-index: -5;
+    color: white;
+}
+
+#colocacion-nube {
+    position: absolute;
+    top: 2000px;
+    z-index: -5;
+    color: black;
+}
+
+#colocacion-servicios {
+    position: absolute;
+    top: 2650px;
+    z-index: -5;
+    color: black;
+}
+
+#colocacion-mapa {
+    position: absolute;
+    top: 3300px;
+    z-index: -5;
+    color: black;
+}
+
+
+@media only screen and (max-width: 1580px) {
+    .caracteristicas-ordenar>i {
+        display: none;
+    }
+
+
+    .caracteristicas-texto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .caracteristicas-texto>p {
+        margin: 0 auto;
+    }
+
+    .tarjetas-porque {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 1100px;
+        border: 2px solid red;
+    }
+
+    .tarjeta-porque {
+        background-color: white;
+        width: 320px;
+        height: 200px;
+        min-width: 320px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        height: 350px;
+        justify-content: center;
+        border-radius: 20px;
+        border: 2px solid red;
+    }
+    
+}
+
+@media only screen and (max-width: 1450px) {
+    .presentacion-img {
+        display: none;
+    }
+
+    .fondo-precios {
+        background-color: #f6f6f6;
+        position: relative;
+        width: 100%;
+        height: 2750px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .caracteristicas-tarjeta {
+        background-color: orange;
+        position: relative;
+        top: 290px;
+        padding-top: 0;
+        padding-bottom: 30px;
+        height: 100%;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        z-index: 6;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .caracteristicas-tarjeta2 {
+        background-color: #2BD8C5;
+        position: relative;
+        top: 290px;
+        padding-top: 0;
+        padding-bottom: 30px;
+        height: 100%;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        z-index: 6;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .centrar-tarjetas {
+        flex-direction: column;
+    }
+
+    .tarjeta {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        height: 800px;
+        width: 30%;
+    }
+
+    .tarjeta2 {
+        margin: 300px auto;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 30%;
+    }
+
+
+    .tarjetaArriba {
+        margin-top: 1280px;
+    }
+
+    .presentacion-centrada {
+        position: absolute;
+        width: 63%;
+        min-width: 450px;
+        height: 832px;
+        margin: 97px auto;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+@media only screen and (max-width: 940px) {
+    .presentacion-btns {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        height: 200px;
+        align-items: center;
+        padding-top: 40px;
+    }
+    
+    .botones-presentacion-right {
+        margin: 20px 30px;
+        height: 50px;
+        width: 120px;
+        border: none;
+        border-radius: 25px;
+        background-color: orange;
+        font-weight: bold;
+        font-size: 15px;
+        cursor: pointer;
+        min-width: 100px;
+        min-height: 50px;
+    }
+}
