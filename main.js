@@ -37,3 +37,13 @@ window.addEventListener('scroll', function () {
 	let windowPosition = window.scrollY > 895;
 	botonSubir.classList.toggle('subirB', windowPosition);
 })
+
+
+document.querySelector('#barra3').addEventListener('click', () => {
+	document.querySelector('#navMobile').classList.add('navMobileTrue');
+});
+
+/* 
+if (document.querySelector('#navMobile').classList.) {
+	document.querySelector('#navMobile').classList.remove('navMobileTrue');
+} */
