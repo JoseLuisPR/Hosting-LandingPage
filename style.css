@@ -12,6 +12,8 @@ html {
     
 }
 
+
+
 .navbar {
     position: fixed;
     top: 0;
@@ -133,7 +135,6 @@ a {
 .presentacion-centrada {
     position: absolute;
     width: 63%;
-    min-width: 450px;
     height: 832px;
     margin: 97px auto;
     align-items: center;
@@ -147,7 +148,6 @@ a {
     height: 350px;
     width: 49%;
     z-index: 1;
-    min-width: 370px;
 }
 
 .presentacion-img {
@@ -521,6 +521,11 @@ i {
     width: 1200px;
     display: flex;
     flex-direction: column;
+}
+
+.ocultar{
+    background-color:rgba(23, 35, 43, 1);
+    border: none;
 }
 
 .centrar-porque>span {
@@ -1074,7 +1079,6 @@ i {
     .presentacion-centrada {
         position: absolute;
         width: 63%;
-        min-width: 450px;
         height: 832px;
         margin: 97px auto;
         align-items: center;
@@ -1233,18 +1237,26 @@ i {
 @media only screen and (max-width: 700px) {
     
 
-    .barra3{
-        font-size: 40px;
+    .fondoBarra3{
+        width: 50px;
+        height: 50px;
         position: fixed;
+        top: 10px;
+        right: 10px;
         z-index: 20;
-        width: 40px;
-        top: 20px;
-        right: 50px;
-        display: flex;
-        flex-direction: row;
-        text-align: center;
-        align-items: center;
-        color: rgba(249, 148, 0, 1);
+        background-color: rgba(249, 148, 0, 1);
+        border-radius: 10px;
+        opacity: 0.7;
+        border: none;
+    }
+
+
+    .barra3{
+        background-color: none;
+        position: fixed;
+        margin: -21.5px -18.5px;
+        font-size: 42px;
+        
     }
     .navbar{
         display: none;
@@ -1254,6 +1266,50 @@ i {
 
 
 @media only screen and (max-width: 500px) {
+
+   
+
+    .presentacion-centrada {
+        position: absolute;
+        width: 100%;
+        height: 832px;
+        margin: 97px auto;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .presentacion-descripcion {
+        position: relative;
+        margin: auto 0;
+        height: 500px;
+        width: 2000px;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .presentacion-descripcion>h1{
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .presentacion-descripcion>h2{
+        margin: 0 auto;
+        font-size: 30px;
+    }
+
+    .typed {
+        font-size: 30px;
+    }
+
+    .subsubtitulo{
+        margin: 30px auto 0;
+        text-align: center;
+    }
+
+
 
     .nube {
         background-color: white;
@@ -1354,18 +1410,6 @@ i {
         font-size: 32px;
         margin: 30px auto 20px;
         text-align: center;
-    }
-    .subirB {
-        bottom: 10px;
-        right: 50px;
-        width: 50px;
-        position: fixed;
-        height: 50px;
-        background-color: rgba(249, 148, 0, 1);
-        z-index: 20;
-        font-size: 50px;
-        border-radius: 10px;
-        opacity: 0.7;
     }
 
     #miami {
