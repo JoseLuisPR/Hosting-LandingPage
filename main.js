@@ -30,8 +30,6 @@ window.addEventListener('scroll', function () {
 	nav.classList.toggle('navbarB', windowPosition);
 })
 
-
-
 window.addEventListener('scroll', function () {
 	let botonSubir = document.querySelector('.subir');
 	let windowPosition = window.scrollY > 895;
@@ -39,11 +37,22 @@ window.addEventListener('scroll', function () {
 })
 
 
+
+/* NAVMOBILE */
+
+// Hacer que aparezca navMobile
+
 document.querySelector('#barra3').addEventListener('click', () => {
-	document.querySelector('#navMobile').classList.add('navMobileTrue');
+	const e = document.querySelector('#navMobile');
+	e.style.display = ((e.style.display != 'flex') ? 'flex' : 'none');
 });
 
-/* 
-if (document.querySelector('#navMobile').classList.) {
-	document.querySelector('#navMobile').classList.remove('navMobileTrue');
-} */
+
+// Hacer que desaparezca navMobile
+
+const cerrar = () => {
+		const e = document.querySelector('#navMobile');
+		e.style.display = ((e.style.display != 'none') ? 'none' : 'flex');
+	};
+
+cerrar();
