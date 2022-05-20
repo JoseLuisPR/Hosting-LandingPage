@@ -30,6 +30,7 @@ window.addEventListener('scroll', function () {
 	nav.classList.toggle('navbarB', windowPosition);
 })
 
+
 window.addEventListener('scroll', function () {
 	let botonSubir = document.querySelector('.subir');
 	let windowPosition = window.scrollY > 895;
@@ -51,8 +52,8 @@ document.querySelector('#barra3').addEventListener('click', () => {
 // Hacer que desaparezca navMobile
 
 const cerrar = () => {
-		const e = document.querySelector('#navMobile');
-		e.style.display = ((e.style.display != 'none') ? 'none' : 'flex');
-	};
+	const e = document.querySelector('#navMobile');
+	e.style.display = ((e.style.display != 'none') ? 'none' : 'flex');
+};
 
 cerrar();
