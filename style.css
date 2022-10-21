@@ -544,7 +544,6 @@ i {
     font-size: 19px;
     color: #808080;
     margin-bottom: 36px;
-    min-width: 320px;
 }
 
 .tarjetas-porque {
@@ -575,12 +574,14 @@ i {
 .centrar-tarjeta-porque>span {
     font-size: 22px;
     margin: 40px 0 30px;
+    
 }
 
 .centrar-tarjeta-porque>p {
     font-size: 19px;
     color: #808080;
     margin-bottom: 0px;
+    
 }
 
 .centrar-tarjeta-porque>button {
@@ -593,18 +594,20 @@ i {
     font-weight: bold;
     font-size: 15px;
     cursor: pointer;
+    top: 2rem;
+    
 }
 
-.leermasporque1 {
-    bottom: -70px;
+#leermasporque1 {
+    margin-top: 3rem;
 }
 
 .leermasporque2 {
-    bottom: -46px;
+    margin-top:0.1rem;
 }
 
 .leermasporque3 {
-    bottom: -47px;
+    margin-top:-0.1rem;
 }
 
 
@@ -874,28 +877,12 @@ i {
 
 
 @media only screen and (max-width: 1580px) {
-    .caracteristicas-ordenar>i {
-        display: none;
-    }
-
-
-    .caracteristicas-texto {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: 0 auto;
-    }
-
-    .caracteristicas-texto>p {
-        margin: 0 auto;
-    }
+   
 
     .tarjetas-porque {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
         align-items: center;
-        height: 1100px;
+        height: 30rem;
+        width: 70rem;
     }
 
     .tarjeta-porque {
@@ -914,22 +901,36 @@ i {
     .nube {
         background-color: white;
         width: 100%;
-        height: 930px;
+        height: 60rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
+    }
+
+    .nube-centrar{
+        height: 95%;
     }
 
     .nube-centrar>span {
         font-size: 32px;
-        margin: 0 auto 12px;
+        margin: 0 auto;
+    }
+
+    .nube-centrar>p {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .nube-centrar{
+        width: 80%;
     }
 
     .descripcion {
         display: flex;
-        flex-direction: column;
         justify-content: center;
-        height: 600px;
+        width: 100%;
+        margin: 0 auto;
     }
 
     .descripcion-detalles {
@@ -957,14 +958,13 @@ i {
     .porque {
         background-color: #fdd700;
         width: 100%;
-        height: 1400px;
+        height: 50rem;
     }
 
     .centrar-porque {
         margin: 100px auto;
-        width: 63%;
+        width: 70rem;
         display: flex;
-        flex-direction: column;
         justify-content: center;
     }
 
@@ -978,7 +978,8 @@ i {
         font-size: 19px;
         color: #808080;
         margin: 0 auto;
-        min-width: 150px,
+        min-width: 150px;
+        width: 70%;
     }
 
     .seccion-mapa {
@@ -1016,15 +1017,20 @@ i {
 }
 
 @media only screen and (max-width: 1450px) {
-    .presentacion-img {
-        display: none;
+
+
+
+    
+    #presentacion-img {
+        width: 50%;
+        height: 70%;
     }
 
     .fondo-precios {
         background-color: #f6f6f6;
         position: relative;
         width: 100%;
-        height: 2750px;
+        height: 70rem;
         display: flex;
         justify-content: center;
     }
@@ -1057,27 +1063,24 @@ i {
         flex-direction: column;
     }
 
-    .centrar-tarjetas {
-        flex-direction: column;
-    }
 
     .tarjeta {
-        margin: 0 auto;
+        top:-80em;
         display: flex;
         flex-direction: column;
         position: relative;
-        height: 800px;
-        width: 30%;
     }
 
     .tarjeta2 {
-        margin: 300px auto;
         display: flex;
         flex-direction: column;
         position: relative;
         width: 30%;
     }
 
+    .tarjeta3{
+        top:0;
+    }
 
     .tarjetaArriba {
         margin-top: 1280px;
@@ -1095,6 +1098,77 @@ i {
 }
 
 @media only screen and (max-width: 1225px) {
+
+
+    .porque{
+        height: 85rem;
+    }
+
+    .centrar-porque{
+        width: 100%;
+        height: 92%;
+        margin: 0;
+        margin-top:10%;
+        justify-content: flex-start;
+    }
+
+    .tarjetas-porque {
+        align-items: center;
+        height: 92%;
+        width: 100%;
+    }
+
+
+    .presentacion-img{
+        display: none;
+    }
+
+
+    .descripcion{
+        flex-direction: column;
+    }
+
+
+    .precios{
+        height: 175rem;
+    }
+    .fondo-precios{
+        height: 100%;
+    }
+    .centrar-tarjetas {
+        flex-direction: column;
+        height: 100%;
+        top:0.1rem;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .tarjeta,.tarjeta2{
+        width: 21rem;
+    }
+
+    .tarjetaArriba{
+        top:-73em;
+        position: relative;
+    }
+
+    .tarjeta2{
+        top:-53rem;
+    }
+
+    .tarjeta3{
+        top:-33em;
+    }
+
+
+
+    .tarjetas-porque{
+        flex-direction: column;
+    }
+
+
+
+
     .seccion-mapa {
         display: flex;
         flex-direction: column;
@@ -1185,6 +1259,19 @@ i {
 }
 
 @media only screen and (max-width: 940px) {
+
+    .tarjetaArriba{
+        margin-top: 70rem;
+    }
+    .precios{
+        height: 200rem;
+    }
+
+    .presentacion-descripcion{
+        width: 25rem;
+        height: 35rem;
+    }
+
     .presentacion-btns {
         position: relative;
         display: flex;
@@ -1505,13 +1592,7 @@ i {
         height: 1400px;
     }
 
-    .centrar-porque {
-        margin: 60px auto;
-        width: 88%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+  
 
     .centrar-porque>span {
         font-size: 32px;
