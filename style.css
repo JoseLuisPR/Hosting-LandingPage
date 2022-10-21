@@ -530,8 +530,9 @@ i {
 }
 
 .ocultar {
-    background-color: rgba(23, 35, 43, 1);
+    background-color: rgba(249, 148, 0, 1);
     border: none;
+    text-align: center;
 }
 
 .centrar-porque>span {
